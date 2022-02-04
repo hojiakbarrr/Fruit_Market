@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/splash_1_Fragment">
+    <fragment
+        android:id="@+id/splash_3_Fragment"
+        android:name="com.example.fruitmarket.Fragments.Splash.splash_3_Fragment"
+        android:label="fragment_splash_3_"
+        tools:layout="@layout/fragment_splash_3_">
+        <action
+            android:id="@+id/action_splash_3_Fragment_to_sign_in_Fragment"
+            app:destination="@id/sign_in_Fragment" />
+        <action
+            android:id="@+id/action_splash_3_Fragment_to_sign_in_Fragment2"
+            app:destination="@id/sign_in_Fragment" />
+    </fragment>
+    <action
+        android:id="@+id/action_sign_up_Fragment_to_sign_in_Fragment"
+        app:destination="@id/sign_in_Fragment" />
+    <fragment
+        android:id="@+id/sign_in_Fragment"
+        android:name="com.example.fruitmarket.sign_in.Sign_in_Fragment"
+        android:label="fragment_sign_in_"
+        tools:layout="@layout/fragment_sign_in_">
+        <action
+            android:id="@+id/action_sign_in_Fragment_to_sign_up_Fragment"
+            app:destination="@id/sign_up_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splash_1_Fragment"
+        android:name="com.example.fruitmarket.Fragments.Splash.splash_1_Fragment"
+        android:label="fragment_splash_1_"
+        tools:layout="@layout/fragment_splash_1_">
+        <action
+            android:id="@+id/action_splash_1_Fragment_to_splash_2_Fragment"
+            app:destination="@id/splash_2_Fragment" />
+        <action
+            android:id="@+id/action_splash_1_Fragment_to_sign_in_Fragment"
+            app:destination="@id/sign_in_Fragment" />
+    </fragment>
+    <action
+        android:id="@+id/action_sign_in_Fragment_to_sign_up_Fragment"
+        app:destination="@id/sign_up_Fragment" />
+    <action
+        android:id="@+id/action_splash_2_Fragment_to_splash_3_Fragment"
+        app:destination="@id/splash_3_Fragment" />
+    <fragment
+        android:id="@+id/splash_2_Fragment"
+        android:name="com.example.fruitmarket.Fragments.Splash.splash_2_Fragment"
+        android:label="fragment_splash_2_"
+        tools:layout="@layout/fragment_splash_2_">
+        <action
+            android:id="@+id/action_splash_2_Fragment_to_splash_3_Fragment"
+            app:destination="@id/splash_3_Fragment" />
+        <action
+            android:id="@+id/action_splash_2_Fragment_to_sign_in_Fragment"
+            app:destination="@id/sign_in_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sign_up_Fragment"
+        android:name="com.example.fruitmarket.sign_in.Sign_up_Fragment"
+        android:label="fragment_sign_up_"
+        tools:layout="@layout/fragment_sign_up_">
+        <action
+            android:id="@+id/action_sign_up_Fragment_to_sign_in_Fragment"
+            app:destination="@id/sign_in_Fragment" />
+        <action
+            android:id="@+id/action_sign_up_Fragment_to_sign_in_Fragment2"
+            app:destination="@id/sign_in_Fragment" />
+        <action
+            android:id="@+id/action_sign_up_Fragment_to_sign_in_Fragment3"
+            app:destination="@id/sign_in_Fragment" />
+    </fragment>
+    <action
+        android:id="@+id/action_splash_1_Fragment_to_splash_2_Fragment"
+        app:destination="@id/splash_2_Fragment" />
+    <action
+        android:id="@+id/action_splash_3_Fragment_to_sign_in_Fragment"
+        app:destination="@id/sign_in_Fragment" />
+</navigation>

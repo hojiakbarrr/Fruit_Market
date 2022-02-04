@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Fruit Market</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Start and all splash screen -->
+    <string name="fruit_market">Fruit Market</string>
+    <string name="skip">Skip</string>
+    <string name="e_shopping">E Shopping /n/n Explore top organic fruits, grab them</string>
+    <string name="next">Next</string>
+    <string name="way">Delivery on the way /n/n Get your order by speed delivery</string>
+    <string name="arrived">Delivery Arrived /n/n Order is arrived at your Place</string>
+    <string name="get_started">Get Started</string>
+    <!-- Start and all splash screen -->
+
+
+    <!-- login and password -->
+    <string name="your_login">Your login</string>
+    <string name="enter_login">Enter Your login</string>
+    <string name="your_password">Your Password</string>
+    <string name="enter_password">Enter Your password</string>
+    <string name="enter">Enter</string>
+    <string name="not_registered">Not registered?</string>
+    <string name="register">Register</string>
+
+    <!-- login and password -->
+
+    <!-- creat new account -->
+    <string name="enter_your_details">Enter your details</string>
+    <string name="enter_your_login">Enter Your login</string>
+    <string name="enter_your_password">Enter Your password</string>
+    <string name="enter_your_email">Enter Your email</string>
+    <string name="enter_your_name">Enter Your name</string>
+    <string name="already_registered">Already registered?</string>
+    <string name="login">Login</string>
+    <string name="title_activity_drawer">Drawer_activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- creat new account -->
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/main_screenFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.fruitmarket.Fragments.Splash.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" />
+    <fragment
+        android:id="@+id/main_screenFragment"
+        android:name="com.example.fruitmarket.window_main.Main_screenFragment"
+        android:label="fragment_main_screen"
+        tools:layout="@layout/fragment_main_screen" >
+        <action
+            android:id="@+id/action_main_screenFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_main_screenFragment_self"
+            app:destination="@id/main_screenFragment" />
+        <action
+            android:id="@+id/action_main_screenFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.fruitmarket.window_main.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="data"
+            app:argType="com.example.fruitmarket.FruitsData" />
+        <action
+            android:id="@+id/action_detailFragment_to_main_screenFragment"
+            app:destination="@id/main_screenFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.fruitmarket.favorites.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_favoritesFragment_to_main_screenFragment"
+            app:destination="@id/main_screenFragment" />
+        <action
+            android:id="@+id/action_favoritesFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <argument
+            android:name="data"
+            app:argType="com.example.fruitmarket.FruitsData" />
+    </fragment>
+</navigation>
